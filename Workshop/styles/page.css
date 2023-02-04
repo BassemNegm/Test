@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: #fbc02d;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  align-items: center;
+  font-size: 70px;
+  margin: 20px;
+}
+
+.landmarks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 50px 0;
+  margin-top: 60px;
+}
+
+.landmark-slide {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: end;
+  background-color: white;
+  width: 85%;
+  margin: 0 auto;
+
+  border-radius: 10px;
+}
+
+.landmark-info {
+  color: black;
+  text-align: left;
+  padding: 4% 10%;
+}
+
+.landmark-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.landmark-slide:nth-child(even) .landmark-info {
+  background: black;
+  color: white;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
